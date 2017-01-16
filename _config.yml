@@ -1,0 +1,10 @@
+name: Andy and Taya
+markdown: redcarpet
+safe: false
+lsi: false
+highlighter: pygments
+timezone: America/Los_Angeles
+gems: [jekyll-paginate]
+paginate: 10
+paginate_path: "blog/page:num"
+exclude: [deploy.sh, Gemfile, Gemfile.lock, .travis.yml]
