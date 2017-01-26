@@ -7,13 +7,46 @@ $blue: #72d0eb // Update blue
 $pink: #ffb3b3 // Add pink
 $family-serif: "Georgia", serif // Add a serif family
 
-// Override generated variables here
-// For example, by default, the $danger color is $red and the font is sans-serif
-// You can change these values:
+$gold: #E2C274
 
-$danger: $orange // Use the existing orange
-$family-primary: $family-serif // Use the new serif family
+// Override generated variables here
+
+$primary: $grey
+$success: $grey-darker
+$background: $black
 
 
 @import "bulma"
+
+.hero-image
+  border-radius: 8px
+  -moz-border-radius: 8px
+  -webkit-border-radius: 8px
+  -o-border-radius: 8px
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .4)
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4)
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4)
+  -o-box-shadow: 0 1px 3px rgba(0, 0, 0, .4)
+
+.nav-logo
+  padding-top: 1.5em
+
+.nav-logo img
+  max-height: 2.75rem
+
+footer a
+  color: $white
+
+.google-maps
+  position: relative
+  padding-bottom: 62.478% // (353 ÷ 565 = 0.624778)
+  height: 0
+  overflow: hidden
+
+.google-maps iframe
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
 

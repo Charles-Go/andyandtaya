@@ -1,0 +1,14 @@
+{
+  "beach": {
+    "q": "place_id:ChIJf6SsTZSkwoARMu1bBGxi8Fo",
+    "address": "415 Pacific Coast Hwy, Santa Monica, CA 90402"
+  },
+  "hermitage": {
+    "q": "place_id:ChIJe72g-aS-woARFWxi79pOMe0",
+    "address": "8822 Cynthia St, West Hollywood, CA 90069, USA"
+  },
+  "lax": {
+    "q": "place_id:ChIJtU-yE9KwwoAR8a2LaVd7qHc",
+    "address": "1 World Way, Los Angeles, CA 90045, USA"
+  }
+}

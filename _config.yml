@@ -8,3 +8,4 @@ gems: [jekyll-paginate]
 paginate: 10
 paginate_path: "blog/page:num"
 exclude: [deploy.sh, Gemfile, Gemfile.lock, .travis.yml]
+gmkey:  AIzaSyCfxZDRSCz0WsXRrtOLqNjbKgO5UG2alxU

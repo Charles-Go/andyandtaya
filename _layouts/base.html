@@ -6,116 +6,62 @@
     </title>
     <meta charSet="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/devices.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ page.root }}favicon.ico">
+    <link rel="stylesheet" type="text/css" href="{{ page.root }}css/style.css">
+    <script type="text/javascript">
+      function toggleNav() {
+        var el = document.getElementById('mainnav');
+        el.classList.toggle('is-active');
+      }
+    </script>
   </head>
   <body>
-    <div class="cook template">
-      <header class="header themecolor-purple themefont-neutral">
-        <div class="container-lrg">
-          <div class="col-12 spread">
-            <div>
-              <a class="logo">
-                Andy + Taya
-              </a>
-            </div>
-            <div>
-              <a class="nav-link" href="#">
-                Twitter
-              </a>
-              <a class="nav-link" href="#">
-                Facebook
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="container-lrg flex">
-          <div class="col-5">
-            <h1 class="heading">
-              Instantly search domains, handles and logotypes.
-            </h1>
-          </div>
-          <div class="col-7">
-            <h2 class="paragraph">
-              We're creating the best place to go when starting a new business or company. With Launchaco you can instantly search domain names, social media handles, and see your logo in beautiful logotypes.
-            </h2>
-            <div class="ctas">
-              <a class="button is-danger" href="">
-                Sign Up
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="container-lrg">
-          <div class="centerdevices col-12">
-            <div class="browserwrapper">
-              <div class="browser">
-                <div class="mask">
-                  <img class="mask-img" src="img/webapp.svg">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-    </div>
+  {% assign page_titles = "Our Story, Wedding, Travel, Program, Registry" | split: ", " %}
+  {% assign page_urls = "index.html , wedding/index.html, travel/index.html, program/index.html, registry/index.html" | split: ", " %}
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item nav-logo" href="{{ page.root }}index.html">
+          <img src="{{ page.root }}img/logo.svg" />
+        </a>
+      </div>
+      <span class="nav-toggle" onclick="toggleNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+      <div class="nav-right nav-menu" id="mainnav">
+        {% for i in (0..page_titles.size) limit:page_titles.size %}
+          {% if page.title == page_titles[i] %}
+            <a class="nav-item is-tab is-active" href="{{ page.root }}{{ page_urls[i] }}">
+              {{ page_titles[i] }}
+            </a>
+          {% else %}
+            <a class="nav-item" href="{{ page.root }}{{ page_urls[i] }}">
+              {{ page_titles[i] }}
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </nav>
 
     {{ content }}
 
-    <div class="footer">
-      <div class="container-sml flex text-center">
-        <div class="col-12">
-          <h3 class="heading">
-            Instantly search domains, handles and logotypes.
-          </h3>
-          <div class="ctas">
-            <a class="ctas-button" href="">
-              Sign Up
-            </a>
-            <a class="ctas-button-2" href="">
-              Sign Up
-            </a>
-          </div>
+    <footer class="footer level">
+      <div class="level-item has-text-centered">
+        <div class="content is-medium">
+          <p><a href="{{ page.root }}index.html">Our Story</a></p>
+          <p><a href="{{ page.root }}wedding/index.html">Wedding</a></p>
         </div>
       </div>
-      <div class="container-lrg footer-nav flex">
-        <div class="col-3 vertical">
-          <a class="logo">
-            Launchaco
-          </a>
-          <a class="nav-link2">
-            ©2016 Compute.Studio
-          </a>
-        </div>
-        <div class="col-3 vertical">
-          <a class="nav-link2">
-            About
-          </a>
-          <a class="nav-link2">
-            Features
-          </a>
-          <a class="nav-link2">
-            Pricing
-          </a>
-        </div>
-        <div class="col-3 vertical">
-          <a class="nav-link2">
-            Twitter
-          </a>
-          <a class="nav-link2">
-            Facebook
-          </a>
-          <a class="nav-link2">
-            Contact
-          </a>
-        </div>
-        <div class="col-3 vertical">
-          <a class="nav-link2">
-            123 Address lane #708, 90210, California, United States of America
-          </a>
-        </div>
+      <div class="level-item has-text-centered">
+        <img src="{{ page.root }}img/logo_white.svg">
       </div>
-    </div>
+      <div class="level-item has-text-centered">
+        <div class="content is-medium">
+          <p><a href="{{ page.root }}travel/index.html">Travel</a></p>
+          <p><a href="{{ page.root }}program/index.html">Program</a></p>
+          <p><a href="{{ page.root }}registry/index.html">Registry</a></p>
+      </div>
+    </footer>
   </body>
 </html>
