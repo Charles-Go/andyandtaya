@@ -6,3 +6,4 @@ deploy/
 deploy
 .sass-cache
 
+.DS_Store
