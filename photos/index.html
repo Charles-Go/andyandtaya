@@ -2,6 +2,12 @@
 title: Photos
 layout: page
 root: '../'
+custom_css:
+- photoswipe
+- default-skin/default-skin
+custom_js:
+- photoswipe.min
+- photoswipe-ui-default.min
 ---
 
 <section class="section">
@@ -11,28 +17,28 @@ root: '../'
         <div class="tile">
           <div class="tile is-parent is-vertical">
             <div class="tile is-child gallery-image">
-              <a href="{{ page.root }}/img/photos/cows.jpg" data-size="1x1">
-                <img src="{{ page.root }}/img/photos/cows_m.jpg">
+              <a href="{{ page.root }}img/photos/nobu.jpg" data-size="2400x1800" data-pindex=1>
+                <img src="{{ page.root }}img/photos/nobu_m.jpg">
                 <div class="gallery-caption">This is a dummy caption</div>
               </a>
             </div>
             <div class="tile is-child gallery-image">
-              <a href="{{ page.root }}/img/photos/IMG_0153.jpg" data-size="1x1">
-                <img src="{{ page.root }}/img/photos/IMG_0153_m.jpg">
+              <a href="{{ page.root }}img/photos/IMG_0153.jpg" data-size="3264x2448" data-pindex=2>
+                <img src="{{ page.root }}img/photos/IMG_0153_m.jpg">
                 <div class="gallery-caption">This is a dummy caption</div>
               </a>
             </div>
           </div>
           <div class="tile is-parent is-vertical">
             <div class="tile is-child gallery-image">
-              <a href="{{ page.root }}/img/photos/boston.jpg" data-size="1x1">
-                <img src="{{ page.root }}/img/photos/boston_m.jpg">
+              <a href="{{ page.root }}img/photos/boston.jpg" data-size="3264x2448" data-pindex=3>
+                <img src="{{ page.root }}img/photos/boston_m.jpg">
                 <div class="gallery-caption">This is a dummy caption</div>
               </a>
             </div>
             <div class="tile is-child gallery-image">
-              <a href="{{ page.root }}/img/photos/nobu.jpg" data-size="1x1">
-                <img src="{{ page.root }}/img/photos/nobu_m.jpg">
+              <a href="{{ page.root }}img/photos/goats.jpg" data-size="2048x1365" data-pindex=4>
+                <img src="{{ page.root }}img/photos/goats_m.jpg">
                 <div class="gallery-caption">This is a dummy caption</div>
               </a>
             </div>
@@ -41,8 +47,8 @@ root: '../'
       </div>
       <div class="tile is-parent">
         <div class="tile is-child gallery-image">
-          <a href="{{ page.root }}/img/photos/IMG_0263.jpg" data-size="1x1">
-            <img src="{{ page.root }}/img/photos/IMG_0263_m.jpg">
+          <a href="{{ page.root }}img/photos/IMG_0263.jpg" data-size="960x1280" data-pindex=5>
+            <img src="{{ page.root }}img/photos/IMG_0263_m.jpg">
             <div class="gallery-caption">This is a dummy caption</div>
           </a>
         </div>
@@ -56,8 +62,8 @@ root: '../'
     <div class="tile is-ancestor">
       <div class="tile is-parent">
         <div class="tile is-child gallery-image">
-          <a href="{{ page.root }}/img/photos/engaged.jpg" data-size="1x1">
-            <img src="{{ page.root }}/img/photos/engaged_m.jpg">
+          <a href="{{ page.root }}img/photos/engaged.jpg" data-size="2448x3264" data-pindex=6>
+            <img src="{{ page.root }}img/photos/engaged_m.jpg">
             <div class="gallery-caption">This is a dummy caption</div>
           </a>
         </div>
@@ -66,28 +72,28 @@ root: '../'
         <div class="tile">
           <div class="tile is-parent is-vertical">
             <div class="tile is-child gallery-image">
-              <a href="{{ page.root }}/img/photos/IMG_0212.jpg" data-size="1x1">
-                <img src="{{ page.root }}/img/photos/IMG_0212_m.jpg">
+              <a href="{{ page.root }}img/photos/IMG_0212.jpg" data-size="3264x2448" data-pindex=7>
+                <img src="{{ page.root }}img/photos/IMG_0212_m.jpg">
                 <div class="gallery-caption">This is a dummy caption</div>
               </a>
             </div>
             <div class="tile is-child gallery-image">
-              <a href="{{ page.root }}/img/photos/IMG_0273.jpg" data-size="1x1">
-                <img src="{{ page.root }}/img/photos/IMG_0273_m.jpg">
+              <a href="{{ page.root }}img/photos/IMG_0273.jpg" data-size="1280x960" data-pindex=8>
+                <img src="{{ page.root }}img/photos/IMG_0273_m.jpg">
                 <div class="gallery-caption">This is a dummy caption</div>
               </a>
             </div>
           </div>
           <div class="tile is-parent is-vertical">
             <div class="tile is-child gallery-image">
-              <a href="{{ page.root }}/img/photos/IMG_3842.jpg" data-size="1x1">
-                <img src="{{ page.root }}/img/photos/IMG_3842_m.jpg">
+              <a href="{{ page.root }}img/photos/IMG_3842.jpg" data-size="4032x3024" data-pindex=9>
+                <img src="{{ page.root }}img/photos/IMG_3842_m.jpg">
                 <div class="gallery-caption">This is a dummy caption</div>
               </a>
             </div>
             <div class="tile is-child gallery-image">
-              <a href="{{ page.root }}/img/photos/IMG_8690.jpg" data-size="1x1">
-                <img src="{{ page.root }}/img/photos/IMG_8690_m.jpg">
+              <a href="{{ page.root }}img/photos/IMG_8690.jpg" data-size="2048x1536" data-pindex=10>
+                <img src="{{ page.root }}img/photos/IMG_8690_m.jpg">
                 <div class="gallery-caption">This is a dummy caption</div>
               </a>
             </div>
@@ -103,43 +109,18 @@ root: '../'
     <div class="tile is-ancestor">
       <div class="tile is-parent">
         <div class="tile is-child gallery-image">
-          <a href="{{ page.root }}/img/photos/IMG_9025.jpg" data-size="1526x2048">
-            <img src="{{ page.root }}/img/photos/IMG_9025_m.jpg">
+          <a href="{{ page.root }}img/photos/IMG_9025.jpg" data-size="1526x2048" data-pindex=11>
+            <img src="{{ page.root }}img/photos/IMG_9025_m.jpg">
             <div class="gallery-caption">This is a dummy caption</div>
           </a>
         </div>
       </div>
       <div class="tile is-parent is-8">
         <div class="tile is-child gallery-image">
-          <a href="{{ page.root }}/img/photos/brento.jpg" data-size="2535x1421">
-            <img src="{{ page.root }}/img/photos/brento_m.jpg">
+          <a href="{{ page.root }}img/photos/brento.jpg" data-size="2535x1421" data-pindex=12>
+            <img src="{{ page.root }}img/photos/brento_m.jpg">
             <div class="gallery-caption">This is a dummy caption</div>
           </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="tile is-ancestor">
-      <div class="tile is-parent">
-        <div class="tile is-child gallery-image">
-          <a href="{{ page.root }}/img/photos/weiss6.jpg" data-size="1365x2048">
-            <img src="{{ page.root }}/img/photos/weiss6_m.jpg">
-            <div class="gallery-caption">This is a dummy caption</div>
-          </a>
-        </div>
-      </div>
-      <div class="tile is-8">
-        <div class="tile is-parent">
-          <div class="tile is-child gallery-image">
-            <a href="{{ page.root }}/img/photos/IMG_6700.jpg" data-size="5184x3456">
-              <img src="{{ page.root }}/img/photos/IMG_6700_m.jpg">
-              <div class="gallery-caption">This is a dummy caption</div>
-            </a>
-          </div>
         </div>
       </div>
     </div>
@@ -150,30 +131,10 @@ root: '../'
   <div class="container">
     <div class="tile is-ancestor">
       <div class="tile is-8">
-        <div class="tile is-parent is-vertical">
+        <div class="tile is-parent">
           <div class="tile is-child gallery-image">
-            <a href="{{ page.root }}/img/photos/IMG_7420.jpg" data-size="1x1">
-              <img src="{{ page.root }}/img/photos/IMG_7420_m.jpg">
-              <div class="gallery-caption">This is a dummy caption</div>
-            </a>
-          </div>
-          <div class="tile is-child gallery-image">
-            <a href="{{ page.root }}/img/photos/IMG_7754.jpg" data-size="3456x5184">
-              <img src="{{ page.root }}/img/photos/IMG_7754_m.jpg">
-              <div class="gallery-caption">This is a dummy caption</div>
-            </a>
-          </div>
-        </div>
-        <div class="tile is-parent is-vertical">
-          <div class="tile is-child gallery-image">
-            <a href="{{ page.root }}/img/photos/IMG_8189.jpg" data-size="3456x5184">
-              <img src="{{ page.root }}/img/photos/IMG_8189_m.jpg">
-              <div class="gallery-caption">This is a dummy caption</div>
-            </a>
-          </div>
-          <div class="tile is-child gallery-image">
-            <a href="{{ page.root }}/img/photos/IMG_9704.jpg" data-size="3456x5184">
-              <img src="{{ page.root }}/img/photos/IMG_9704_m.jpg">
+            <a href="{{ page.root }}img/photos/IMG_6700.jpg" data-size="5184x3456" data-pindex=13>
+              <img src="{{ page.root }}img/photos/IMG_6700_m.jpg">
               <div class="gallery-caption">This is a dummy caption</div>
             </a>
           </div>
@@ -181,8 +142,53 @@ root: '../'
       </div>
       <div class="tile is-parent">
         <div class="tile is-child gallery-image">
-          <a href="{{ page.root }}/img/photos/IMG_9894.jpg" data-size="1x1">
-            <img src="{{ page.root }}/img/photos/IMG_9894_m.jpg">
+          <a href="{{ page.root }}img/photos/weiss6.jpg" data-size="1365x2048" data-pindex=14>
+            <img src="{{ page.root }}img/photos/weiss6_m.jpg">
+            <div class="gallery-caption">This is a dummy caption</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="tile is-ancestor">
+      <div class="tile is-8">
+        <div class="tile is-parent is-vertical">
+          <div class="tile is-child gallery-image">
+            <a href="{{ page.root }}img/photos/IMG_7420.jpg" data-size="5184x3456" data-pindex=15>
+              <img src="{{ page.root }}img/photos/IMG_7420_m.jpg">
+              <div class="gallery-caption">This is a dummy caption</div>
+            </a>
+          </div>
+          <div class="tile is-child gallery-image">
+            <a href="{{ page.root }}img/photos/IMG_7754.jpg" data-size="5184x3456" data-pindex=16>
+              <img src="{{ page.root }}img/photos/IMG_7754_m.jpg">
+              <div class="gallery-caption">This is a dummy caption</div>
+            </a>
+          </div>
+        </div>
+        <div class="tile is-parent is-vertical">
+          <div class="tile is-child gallery-image">
+            <a href="{{ page.root }}img/photos/IMG_8189.jpg" data-size="4065x2710" data-pindex=17>
+              <img src="{{ page.root }}img/photos/IMG_8189_m.jpg">
+              <div class="gallery-caption">This is a dummy caption</div>
+            </a>
+          </div>
+          <div class="tile is-child gallery-image">
+            <a href="{{ page.root }}img/photos/IMG_9704.jpg" data-size="2048x1362" data-pindex=18>
+              <img src="{{ page.root }}img/photos/IMG_9704_m.jpg">
+              <div class="gallery-caption">This is a dummy caption</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="tile is-parent">
+        <div class="tile is-child gallery-image">
+          <a href="{{ page.root }}img/photos/IMG_9894.jpg" data-size="2448x3264" data-pindex=19>
+            <img src="{{ page.root }}img/photos/IMG_9894_m.jpg">
             <div class="gallery-caption">This is a dummy caption</div>
           </a>
         </div>
@@ -196,8 +202,8 @@ root: '../'
     <div class="tile is-ancestor">
       <div class="tile is-parent">
         <div class="tile is-child gallery-image">
-          <a href="{{ page.root }}/img/photos/IMG_0337.jpg" data-size="1x1">
-            <img src="{{ page.root }}/img/photos/IMG_0337_m.jpg">
+          <a href="{{ page.root }}img/photos/IMG_0337.jpg" data-size="741x988" data-pindex=20>
+            <img src="{{ page.root }}img/photos/IMG_0337_m.jpg">
             <div class="gallery-caption">This is a dummy caption</div>
           </a>
         </div>
@@ -205,28 +211,28 @@ root: '../'
       <div class="tile is-8">
         <div class="tile is-parent is-vertical">
           <div class="tile is-child gallery-image">
-            <a href="{{ page.root }}/img/photos/IMG_7577.jpg" data-size="1x1">
-              <img src="{{ page.root }}/img/photos/IMG_7577_m.jpg">
+            <a href="{{ page.root }}img/photos/IMG_7577.jpg" data-size="4318x2879" data-pindex=21>
+              <img src="{{ page.root }}img/photos/IMG_7577_m.jpg">
               <div class="gallery-caption">This is a dummy caption</div>
             </a>
           </div>
           <div class="tile is-child gallery-image">
-            <a href="{{ page.root }}/img/photos/IMG_7885.jpg" data-size="3456x5184">
-              <img src="{{ page.root }}/img/photos/IMG_7885_m.jpg">
+            <a href="{{ page.root }}img/photos/IMG_7885.jpg" data-size="4549x3033" data-pindex=22>
+              <img src="{{ page.root }}img/photos/IMG_7885_m.jpg">
               <div class="gallery-caption">This is a dummy caption</div>
             </a>
           </div>
         </div>
         <div class="tile is-parent is-vertical">
           <div class="tile is-child gallery-image">
-            <a href="{{ page.root }}/img/photos/IMG_9047.jpg" data-size="3456x5184">
-              <img src="{{ page.root }}/img/photos/IMG_9047_m.jpg">
+            <a href="{{ page.root }}img/photos/IMG_9047.jpg" data-size="2048x1365" data-pindex=23>
+              <img src="{{ page.root }}img/photos/IMG_9047_m.jpg">
               <div class="gallery-caption">This is a dummy caption</div>
             </a>
           </div>
           <div class="tile is-child gallery-image">
-            <a href="{{ page.root }}/img/photos/weiss173.jpg" data-size="3456x5184">
-              <img src="{{ page.root }}/img/photos/weiss173_m.jpg">
+            <a href="{{ page.root }}img/photos/weiss173.jpg" data-size="2048x1365" data-pindex=24>
+              <img src="{{ page.root }}img/photos/weiss173_m.jpg">
               <div class="gallery-caption">This is a dummy caption</div>
             </a>
           </div>
@@ -241,8 +247,8 @@ root: '../'
     <div class="tile is-ancestor">
       <div class="tile is-parent">
         <div class="tile is-child gallery-image">
-          <a href="{{ page.root }}/img/photos/IMG_7408.jpg" data-size="3456x5184">
-            <img src="{{ page.root }}/img/photos/IMG_7408_m.jpg">
+          <a href="{{ page.root }}img/photos/IMG_7408.jpg" data-size="3456x5184" data-pindex=25>
+            <img src="{{ page.root }}img/photos/IMG_7408_m.jpg">
             <div class="gallery-caption">This is a dummy caption</div>
           </a>
         </div>
@@ -250,28 +256,28 @@ root: '../'
       <div class="tile is-8">
           <div class="tile is-parent is-vertical">
             <div class="tile is-child gallery-image">
-              <a href="{{ page.root }}/img/photos/IMG_7484.jpg" data-size="4621x3081">
-                <img src="{{ page.root }}/img/photos/IMG_7484_m.jpg">
+              <a href="{{ page.root }}img/photos/IMG_7484.jpg" data-size="4621x3081" data-pindex=26>
+                <img src="{{ page.root }}img/photos/IMG_7484_m.jpg">
                 <div class="gallery-caption">This is a dummy caption</div>
               </a>
             </div>
             <div class="tile is-child gallery-image">
-              <a href="{{ page.root }}/img/photos/IMG_7582.jpg" data-size="4189x2793">
-                <img src="{{ page.root }}/img/photos/IMG_7582_m.jpg">
+              <a href="{{ page.root }}img/photos/IMG_7582.jpg" data-size="4189x2793" data-pindex=27>
+                <img src="{{ page.root }}img/photos/IMG_7582_m.jpg">
                 <div class="gallery-caption">This is a dummy caption</div>
               </a>
             </div>
           </div>
           <div class="tile is-parent is-vertical">
             <div class="tile is-child gallery-image">
-              <a href="{{ page.root }}/img/photos/IMG_7955.jpg" data-size="5184x3456">
-                <img src="{{ page.root }}/img/photos/IMG_7955_m.jpg">
+              <a href="{{ page.root }}img/photos/IMG_7955.jpg" data-size="5184x3456" data-pindex=28>
+                <img src="{{ page.root }}img/photos/IMG_7955_m.jpg">
                 <div class="gallery-caption">This is a dummy caption</div>
               </a>
             </div>
             <div class="tile is-child gallery-image">
-              <a href="{{ page.root }}/img/photos/beach_bw.jpg" data-size="2048x1365">
-                <img src="{{ page.root }}/img/photos/beach_bw_m.jpg">
+              <a href="{{ page.root }}img/photos/beach_bw.jpg" data-size="2048x1365" data-pindex=29>
+                <img src="{{ page.root }}img/photos/beach_bw_m.jpg">
                 <div class="gallery-caption">This is a dummy caption</div>
               </a>
             </div>
@@ -286,8 +292,8 @@ root: '../'
     <div class="tile is-ancestor">
       <div class="tile is-parent">
         <div class="tile is-child gallery-image">
-          <a href="{{ page.root }}/img/photos/IMG_0105.jpg" data-size="1x1">
-            <img src="{{ page.root }}/img/photos/IMG_0105_m.jpg">
+          <a href="{{ page.root }}img/photos/IMG_0105.jpg" data-size="960x1280" data-pindex=30>
+            <img src="{{ page.root }}img/photos/IMG_0105_m.jpg">
             <div class="gallery-caption">This is a dummy caption</div>
           </a>
         </div>
@@ -296,14 +302,14 @@ root: '../'
         <div class="tile">
           <div class="tile is-parent is-vertical">
             <div class="tile is-child gallery-image">
-              <a href="{{ page.root }}/img/photos/IMG_9871.jpg" data-size="1x1">
-                <img src="{{ page.root }}/img/photos/IMG_9871_m.jpg">
+              <a href="{{ page.root }}img/photos/IMG_9871.jpg" data-size="3264x2448" data-pindex=31>
+                <img src="{{ page.root }}img/photos/IMG_9871_m.jpg">
                 <div class="gallery-caption">This is a dummy caption</div>
               </a>
             </div>
             <div class="tile is-child gallery-image">
-              <a href="{{ page.root }}/img/photos/IMG_9907.jpg" data-size="1x1">
-                <img src="{{ page.root }}/img/photos/IMG_9907_m.jpg">
+              <a href="{{ page.root }}img/photos/IMG_9907.jpg" data-size="1280x960" data-pindex=32>
+                <img src="{{ page.root }}img/photos/IMG_9907_m.jpg">
                 <div class="gallery-caption">This is a dummy caption</div>
               </a>
             </div>
@@ -312,8 +318,8 @@ root: '../'
       </div>
       <div class="tile is-parent">
         <div class="tile is-child gallery-image">
-          <a href="{{ page.root }}/img/photos/IMG_0434.jpg" data-size="1x1">
-            <img src="{{ page.root }}/img/photos/IMG_0434_m.jpg">
+          <a href="{{ page.root }}img/photos/IMG_0434.jpg" data-size="960x1280" data-pindex=33>
+            <img src="{{ page.root }}img/photos/IMG_0434_m.jpg">
             <div class="gallery-caption">This is a dummy caption</div>
           </a>
         </div>
@@ -327,16 +333,16 @@ root: '../'
     <div class="tile is-ancestor">
       <div class="tile is-parent">
         <div class="tile is-child gallery-image">
-          <a href="{{ page.root }}/img/photos/andy_ws.jpg" data-size="1x1">
-            <img src="{{ page.root }}/img/photos/andy_ws_m.jpg">
+          <a href="{{ page.root }}img/photos/andy_ws.jpg" data-size="2121x1336" data-pindex=34>
+            <img src="{{ page.root }}img/photos/andy_ws_m.jpg">
             <div class="gallery-caption">This is a dummy caption</div>
           </a>
         </div>
       </div>
       <div class="tile is-parent">
         <div class="tile is-child gallery-image">
-          <a href="{{ page.root }}/img/photos/taya_ws.jpg" data-size="1x1">
-            <img src="{{ page.root }}/img/photos/taya_ws_m.jpg">
+          <a href="{{ page.root }}img/photos/taya_ws.jpg" data-size="2121x1336" data-pindex=35>
+            <img src="{{ page.root }}img/photos/taya_ws_m.jpg">
             <div class="gallery-caption">This is a dummy caption</div>
           </a>
         </div>
@@ -350,24 +356,24 @@ root: '../'
     <div class="tile is-ancestor">
       <div class="tile is-parent is-4">
         <div class="tile is-child gallery-image">
-          <a href="{{ page.root }}/img/photos/IMG_6760.jpg" data-size="1x1">
-            <img src="{{ page.root }}/img/photos/IMG_6760_m.jpg">
+          <a href="{{ page.root }}img/photos/IMG_6760.jpg" data-size="3456x3267" data-pindex=36>
+            <img src="{{ page.root }}img/photos/IMG_6760_m.jpg">
             <div class="gallery-caption">This is a dummy caption</div>
           </a>
         </div>
       </div>
       <div class="tile is-parent is-4">
         <div class="tile is-child gallery-image">
-          <a href="{{ page.root }}/img/photos/IMG_0316.jpg" data-size="1x1">
-            <img src="{{ page.root }}/img/photos/IMG_0316_m.jpg">
+          <a href="{{ page.root }}img/photos/IMG_0316.jpg" data-size="2448x2448" data-pindex=37>
+            <img src="{{ page.root }}img/photos/IMG_0316_m.jpg">
             <div class="gallery-caption">This is a dummy caption</div>
           </a>
         </div>
       </div>
       <div class="tile is-parent is-4">
         <div class="tile is-child gallery-image">
-          <a href="{{ page.root }}/img/photos/IMG_6705.jpg" data-size="1x1">
-            <img src="{{ page.root }}/img/photos/IMG_6705_m.jpg">
+          <a href="{{ page.root }}img/photos/IMG_6705.jpg" data-size="640x641" data-pindex=38>
+            <img src="{{ page.root }}img/photos/IMG_6705_m.jpg">
             <div class="gallery-caption">This is a dummy caption</div>
           </a>
         </div>
@@ -375,3 +381,7 @@ root: '../'
     </div>
   </div>
 </section>
+
+{% include pswp.html %}
+
+<script type="text/javascript" src="{{ page.root }}js/photos.js"></script>
